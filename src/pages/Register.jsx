@@ -112,7 +112,10 @@ const Register = () => {
           {iserr && <span className=" text-red">Something went wrong</span>}
         </form>
         <p className=" text-gray text-xs py-3">
-          Already have an account? <Link to="/login">Login</Link>
+          Already have an account?{' '}
+          <Link to="/login" className="font-bold text-blue">
+            Login
+          </Link>
         </p>
       </div>
     </div>

@@ -24,7 +24,7 @@ const Login = () => {
         <span className="text-xl text-secondary font-semibold pb-3">
           Chat App
         </span>
-        <span className="text-sm text-graymedium">Register</span>
+        <span className="text-sm text-graymedium">LOGIN</span>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input
             type="text"
@@ -40,7 +40,10 @@ const Login = () => {
           <button className=" w-full bg-primary py-1 text-white">Log In</button>
         </form>
         <p className=" text-gray text-xs py-3">
-          Don&apos;t have an account? <Link to="/register">Register</Link>
+          Don&apos;t have an account?{' '}
+          <Link to="/register" className="font-bold text-blue">
+            Register
+          </Link>
         </p>
         {err && (
           <div className=" bg-red p-3 text-lg text-white">
